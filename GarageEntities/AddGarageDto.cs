@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace GarageEntities
 {
-    internal class AddGarageDto
-    {
+   
+
+        public class AddGarageDto
+        {
+            public string Name { get; set; }
+            public string Address { get; set; }
+            public string City { get; set; }
+            public string Phone { get; set; }
+            public int ZipCode { get; set; }
+            public string Type { get; set; }
+            public string Manager { get; set; }
+        }
     }
-}
+

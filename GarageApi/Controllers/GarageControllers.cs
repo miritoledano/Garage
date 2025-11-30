@@ -1,33 +1,65 @@
+
+using GarageBl.intarfaces;
+using GarageEntities;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace GarageApi.Controllers
+namespace DogBarberShopApi.Controllers
 {
+    [Route("api/[controller]/[action]")]
     [ApiController]
-    [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class GaragesController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
+        private readonly IGarageBl _garageBl;
 
-        private readonly ILogger<WeatherForecastController> _logger;
-
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public GaragesController(IGarageBl garageBl)
         {
-            _logger = logger;
+            _garageBl = garageBl;
         }
 
-        [HttpGet(Name = "GetWeatherForecast")]
-        public IEnumerable<WeatherForecast> Get()
+        // POST: api/garages/AddGarage
+        [HttpPost]
+        public IActionResult AddGarage(AddGarageDto garageDto)
         {
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            try
             {
-                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-            })
-            .ToArray();
+                _garageBl.AddGarage(garageDto);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
+        }
+
+        // GET: api/garages/GetAllGarages
+        [HttpGet]
+        public IActionResult GetAllGarages()
+        {
+            try
+            {
+                List<Garage> garages = _garageBl.GetAllGarages();
+                return Ok(garages);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
+        }
+
+        // GET: api/garages/FetchAndSaveFromApi
+        [HttpGet]
+        public IActionResult FetchAndSaveFromApi()
+        {
+            try
+            {
+                List<Garage> garages = _garageBl.FetchAndSaveFromApi();
+                return Ok(garages);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
         }
     }
 }

@@ -1,0 +1,23 @@
+﻿using GarageDl.intarfaces;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace GarageDl.servers
+{
+    public class GarageDl:IGarageDb
+    {
+        //private readonly GarageContext _garageContext;
+        //private readonly ILogger<GarageDl> _logger;
+
+        //public GarageDl(GarageContext context, ILogger<GarageDl> logger)
+        //{
+        //    _garageContext = context;
+        //    _logger = logger;
+        //}
+
+
+    }
+}
