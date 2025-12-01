@@ -1,23 +1,59 @@
-var builder = WebApplication.CreateBuilder(args);
+using GarageBL.intarfaces;
+using GarageDB.EF.Contexts;
+using GarageDB.intarfaces;
+using GarageDB.servers;
+using GarageApi; // MapperManager
+using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 
-// Add services to the container.
 
-builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+namespace GarageApi
 {
-    app.MapOpenApi();
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            var builder = WebApplication.CreateBuilder(args);
+
+            // --- Controllers & Swagger ---
+            builder.Services.AddControllers();
+            builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddSwaggerGen();
+
+            // --- AutoMapper ---
+            builder.Services.AddAutoMapper(typeof(MapperManager));
+
+            // --- HttpClient ---
+            builder.Services.AddHttpClient();
+
+            // --- DbContext ---
+            builder.Services.AddDbContext<GarageContext>(options =>
+            {
+                var connectionString = builder.Configuration.GetConnectionString("GarageDb");
+                options.UseSqlServer(connectionString);
+            });
+
+            // --- Dependency Injection ---
+            builder.Services.AddScoped<IGarageDb, GarageDb>();
+            builder.Services.AddScoped<IGarageBl,GarageBl >();
+
+
+            var app = builder.Build();
+
+            // --- Middleware ---
+            if (app.Environment.IsDevelopment())
+            {
+                app.UseSwagger();
+                app.UseSwaggerUI();
+            }
+
+            app.UseHttpsRedirection();
+            app.UseAuthorization();
+
+            // כאן נופל כשיש בעיית DI או בעיית קונסטרקטור
+            app.MapControllers();
+
+            app.Run();
+        }
+    }
 }
-
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
-
-app.Run();

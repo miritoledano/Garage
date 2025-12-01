@@ -5,9 +5,9 @@ VisualStudioVersion = 17.14.36310.24
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GarageApi", "GarageApi\GarageApi.csproj", "{27A9EA98-CC34-47B0-ACE6-0BCED412395F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GarageBl", "GarageBl\GarageBl.csproj", "{F306763E-36AC-4F0C-AA8C-E3D0534C0DBA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GarageBL", "GarageBl\GarageBL.csproj", "{F306763E-36AC-4F0C-AA8C-E3D0534C0DBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GarageDb", "GarageDl\GarageDb.csproj", "{2EC730AD-1A81-459D-B47B-1051D604FDC2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GarageDB", "GarageDl\GarageDB.csproj", "{2EC730AD-1A81-459D-B47B-1051D604FDC2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GarageEntities", "GarageEntities\GarageEntities.csproj", "{05B96B7F-4C79-4FCF-8682-C6441CD49972}"
 EndProject

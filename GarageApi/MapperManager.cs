@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using GarageDB.EF.Models;
 using GarageEntities;
 
 namespace GarageApi
@@ -8,7 +9,7 @@ namespace GarageApi
         public MapperManager()
         {
 
-            //CreateMap<AddGarageDto, Queue>();
+            CreateMap<AddGarageDto, Garage>();
 
 
         }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace GarageDb.EF.Models;
+namespace GarageDB.EF.Models;
 
 public partial class Garage
 {

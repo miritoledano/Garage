@@ -2,7 +2,7 @@
 
 namespace GarageEntities
 {
-    public class Garage
+    public class GradE
     {
         [Key] // _id הוא המפתח הראשי
         public int _id { get; set; }

@@ -1,5 +1,6 @@
 
-using GarageBl.intarfaces;
+using GarageBL.intarfaces;
+using GarageDB.EF.Models;
 using GarageEntities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -49,11 +50,11 @@ namespace DogBarberShopApi.Controllers
 
         // GET: api/garages/FetchAndSaveFromApi
         [HttpGet]
-        public IActionResult FetchAndSaveFromApi()
+        public async Task<IActionResult> FetchAndSaveFromApi()
         {
             try
             {
-                List<Garage> garages = _garageBl.FetchAndSaveFromApi();
+                List<Garage> garages = await _garageBl.FetchAndSaveFromApiAsync();
                 return Ok(garages);
             }
             catch (Exception ex)
@@ -61,5 +62,6 @@ namespace DogBarberShopApi.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }
+
     }
 }

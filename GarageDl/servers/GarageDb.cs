@@ -1,11 +1,11 @@
-﻿using GarageDb.EF.Contexts;
-using GarageEntities;
-using GarageDl.intarfaces;
+﻿using GarageDB.EF.Contexts;
+using GarageDB.EF.Models;
+using GarageDB.intarfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace GarageDl.servers
+namespace GarageDB.servers
 {
     public class GarageDb : IGarageDb
     {
@@ -36,7 +36,7 @@ namespace GarageDl.servers
         public List<Garage> FetchAndSaveFromApi()
         {
             List<Garage> garagesFromApi = new List<Garage>();
-            // כאן אפשר לממש קריאה ל-API ושמירה
+          
             return garagesFromApi;
         }
     }

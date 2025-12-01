@@ -1,16 +1,14 @@
-﻿using GarageEntities;
-using System;
+﻿using GarageDB.EF.Models;
+using GarageEntities;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
-namespace GarageBl.intarfaces
+namespace GarageBL.intarfaces
 {
     public interface IGarageBl
     {
         void AddGarage(AddGarageDto garageDto);
-        List<GarageEntities.GarageEntities> GetAllGarages();
-        List<GarageEntities.GarageEntities> FetchAndSaveFromApi(); // פעולה למשיכת נתונים מה-API
+        List<Garage> GetAllGarages();
+       Task< List<Garage>> FetchAndSaveFromApiAsync(); // <-- מתאים למחלקה
     }
 }

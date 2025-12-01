@@ -8,17 +8,19 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.3.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.0.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GarageBl\GarageBl.csproj" />
-    <ProjectReference Include="..\GarageDl\GarageDb.csproj" />
+    <ProjectReference Include="..\GarageBl\GarageBL.csproj" />
+    <ProjectReference Include="..\GarageDl\GarageDB.csproj" />
     <ProjectReference Include="..\GarageEntities\GarageEntities.csproj" />
   </ItemGroup>
 

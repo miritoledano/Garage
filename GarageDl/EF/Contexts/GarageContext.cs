@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using GarageDb.EF.Models;
+using GarageDB.EF.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace GarageDb.EF.Contexts;
+namespace GarageDB.EF.Contexts;
 
 public partial class GarageContext : DbContext
 {
