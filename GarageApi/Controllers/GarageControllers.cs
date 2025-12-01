@@ -11,11 +11,11 @@ namespace DogBarberShopApi.Controllers
     [ApiController]
     public class GaragesController : ControllerBase
     {
-        private readonly IGaradeBll _garageBlL;
+        private readonly IGaradeBll _garageBll;
 
-        public GaragesController(IGaradeBll garageBl)
+        public GaragesController(IGaradeBll garageBll)
         {
-            _garageBlL = garageBl;
+            _garageBll = garageBll;
         }
 
         // POST: api/garages/AddGarage
@@ -24,7 +24,7 @@ namespace DogBarberShopApi.Controllers
         {
             try
             {
-                _garageBlL.AddGarage(garageDto);
+                _garageBll.AddGarage(garageDto);
                 return Ok();
             }
             catch (Exception ex)
@@ -39,7 +39,7 @@ namespace DogBarberShopApi.Controllers
         {
             try
             {
-                List<Garage> garages = _garageBlL.GetAllGarages();
+                List<Garage> garages = _garageBll.GetAllGarages();
                 return Ok(garages);
             }
             catch (Exception ex)
@@ -54,7 +54,7 @@ namespace DogBarberShopApi.Controllers
         {
             try
             {
-                List<Garage> garages = await _garageBlL.FetchAndSaveFromApiAsync();
+                List<Garage> garages = await _garageBll.FetchAndSaveFromApiAsync();
                 return Ok(garages);
             }
             catch (Exception ex)
