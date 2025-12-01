@@ -1,9 +1,9 @@
 using GarageBL.intarfaces;
+using GarageBL.servers;
 using GarageDB.EF.Contexts;
 using GarageDB.intarfaces;
 using GarageDB.servers;
-using GarageApi; // MapperManager
-using AutoMapper;
+
 using Microsoft.EntityFrameworkCore;
 
 
@@ -34,8 +34,9 @@ namespace GarageApi
             });
 
             // --- Dependency Injection ---
+            builder.Services.AddScoped<IGaradeBll, GaradeBll>();
             builder.Services.AddScoped<IGarageDb, GarageDb>();
-            builder.Services.AddScoped<IGarageBl,GarageBl >();
+         
 
 
             var app = builder.Build();

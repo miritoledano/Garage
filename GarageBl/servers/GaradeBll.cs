@@ -2,28 +2,30 @@
 using GarageBL.intarfaces;
 using GarageDB.EF.Models;
 using GarageDB.intarfaces;
+using GarageDB.servers;
 using GarageEntities;
 using System;
 using System.Collections.Generic;
-using System.Net.Http;
+using System.Linq;
+using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace GarageBL.servers
 {
-    public class GarageBl : IGarageBl
+    public class GaradeBll:IGaradeBll
     {
         private readonly IGarageDb _garageDb;
         private readonly IMapper _mapper;
         private readonly IHttpClientFactory _httpClientFactory;
 
-        public GarageBl(IGarageDb garageDb, IMapper mapper, IHttpClientFactory httpClientFactory)
+        public GaradeBll(IGarageDb garageDb, IMapper mapper, IHttpClientFactory httpClientFactory)
         {
             _garageDb = garageDb;
             _mapper = mapper;
             _httpClientFactory = httpClientFactory;
         }
-
+      
         public void AddGarage(AddGarageDto garageDto)
         {
             var garageEntity = _mapper.Map<Garage>(garageDto);
@@ -137,6 +139,7 @@ namespace GarageBL.servers
 
                 garagesFromApi.Add(garage);
 
+
                 try
                 {
                     _garageDb.AddGarage(garage);
@@ -151,3 +154,4 @@ namespace GarageBL.servers
         }
     }
 }
+
