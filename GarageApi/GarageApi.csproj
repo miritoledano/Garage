@@ -1,27 +1,46 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+	<PropertyGroup>
+		<!-- Target framework -->
+		<TargetFramework>net9.0</TargetFramework>
 
-  <ItemGroup>
-    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.3.0" />
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.7" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.0.1" />
-  </ItemGroup>
+		<!-- Enable nullable reference types -->
+		<Nullable>enable</Nullable>
 
-  <ItemGroup>
-    <ProjectReference Include="..\GarageBl\GarageBL.csproj" />
-    <ProjectReference Include="..\GarageDl\GarageDB.csproj" />
-    <ProjectReference Include="..\GarageEntities\GarageEntities.csproj" />
-  </ItemGroup>
+		<!-- Enable implicit usings for common namespaces -->
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- AutoMapper for dependency injection -->
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+
+
+		<!-- Entity Framework Core SQL Server -->
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
+
+		<!-- EF Core tools for migrations and scaffolding -->
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+
+		<!-- Logging with Serilog -->
+		<PackageReference Include="Serilog.AspNetCore" Version="10.0.0" />
+
+		<!-- Swagger / OpenAPI documentation -->
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="10.0.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<!-- Folder for log files -->
+		<Folder Include="Logs\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\GarageBL\GarageBL.csproj" />
+	  <ProjectReference Include="..\GarageDB\GarageDB.csproj" />
+	  <ProjectReference Include="..\GarageEntities\GarageEntities.csproj" />
+	</ItemGroup>
 
 </Project>
