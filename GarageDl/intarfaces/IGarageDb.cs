@@ -1,12 +1,12 @@
-﻿using System;
+﻿using GarageEntities;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GarageDl.intarfaces
 {
     public interface IGarageDb
     {
+        void AddGarage(Garage garage);      // מקבל DTO
+        List<Garage> GetAllGarages();               // מחזיר Entity
+        List<Garage> FetchAndSaveFromApi();         // מחזיר Entity        // מחזיר Entity
     }
 }

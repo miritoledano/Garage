@@ -10,7 +10,7 @@ namespace GarageBl.intarfaces
     public interface IGarageBl
     {
         void AddGarage(AddGarageDto garageDto);
-        List<Garage> GetAllGarages();
-        List<Garage> FetchAndSaveFromApi(); // פעולה למשיכת נתונים מה-API
+        List<GarageEntities.GarageEntities> GetAllGarages();
+        List<GarageEntities.GarageEntities> FetchAndSaveFromApi(); // פעולה למשיכת נתונים מה-API
     }
 }
