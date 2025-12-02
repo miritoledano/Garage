@@ -4,6 +4,7 @@ namespace GarageApi
 {
     public static class SerilogBilder
     {
+        // מחלקה סטטית שמטרתה להוסיף הרחבה לוואב 
 
         public static WebApplicationBuilder UseSerilog(this WebApplicationBuilder builder)
         {
@@ -15,7 +16,7 @@ namespace GarageApi
                 {
                     loggerConfiguration
                     .ReadFrom
-                    .Configuration(hostingContext.Configuration);
+                  .Configuration(hostingContext.Configuration);   //טעינת ההגדרות מהוקבץ של appsetting
                 });
 
             return builder;
