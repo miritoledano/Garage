@@ -10,8 +10,10 @@ namespace GarageBL.intarfaces
 {
     public interface IGaradeBll
     {
-        void AddGarage(AddGarageDto garageDto);
+        Task AddGarageAsync(AddGarageDto garageDto);       // ✔ Task במקום void
         List<Garage> GetAllGarages();
-        Task<List<Garage>> FetchAndSaveFromApiAsync(); // <-- מתאים למחלקה
+        Task<List<Garage>> FetchAndSaveFromApiAsync();
+        Task AddSelectedGaragesAsync(List<Garage> selectedGarages);
+
     }
 }

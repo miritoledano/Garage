@@ -5,8 +5,16 @@ namespace GarageDB.intarfaces
 {
     public interface IGarageDb
     {
-        void AddGarage(Garage garage);
+        Task AddGarageAsync(Garage garage);
         List<Garage> GetAllGarages();
         List<Garage> FetchAndSaveFromApi();
+         Task AddSelectedGaragesAsync(List<Garage> selectedGarages);
+
+
+
+
     }
 }
+
+
+

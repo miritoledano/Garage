@@ -1,3 +1,4 @@
+using GarageApi;
 using GarageBL.intarfaces;
 using GarageBL.servers;
 using GarageDB.EF.Contexts;
@@ -5,89 +6,70 @@ using GarageDB.intarfaces;
 using GarageDB.servers;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
-using System;
-using System.Reflection;
 
-namespace GarageApi
+
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddCors(options =>
 {
-    public class Program
+    options.AddPolicy("AllowAngular", policy =>
     {
-        public static void Main(string[] args)
-        {
-            // --- Configure Serilog early ---
-            Log.Logger = new LoggerConfiguration()
-                .MinimumLevel.Debug()
-                .WriteTo.Console()
-                .WriteTo.File("Logs/log.txt", rollingInterval: RollingInterval.Day)
-                .CreateLogger();
+        policy.WithOrigins("http://localhost:4200")  /
+              .AllowAnyHeader()                       
+              .AllowAnyMethod();                      
+    });
+});
 
-            try
-            {
-                Log.Information("Starting up");
+// הגדרת Serilog ללוגים 
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Debug()
+    .WriteTo.Console()                   
+    .WriteTo.File("Logs/log.txt", rollingInterval: RollingInterval.Day) // שמירה לקובץ יומי
+    .CreateLogger();
 
-                var builder = WebApplication.CreateBuilder(args);
+builder.Host.UseSerilog(); 
 
-                // --- Use Serilog ---
-                builder.Host.UseSerilog();
 
-                // --- Controllers & Swagger ---
-                builder.Services.AddControllers();
-                builder.Services.AddEndpointsApiExplorer();
-                builder.Services.AddSwaggerGen();
+builder.Services.AddControllers();          
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();           
 
-                // --- AutoMapper ---
-                builder.Services.AddAutoMapper(typeof(MapperManager));
+builder.Services.AddAutoMapper(typeof(MapperManager)); // מיפוי בין ה DTO ל ENTITIY
 
-                // --- HttpClient ---
-                builder.Services.AddHttpClient();
 
-                // --- DbContext ---
-                builder.Services.AddDbContext<GarageContext>(options =>
-                {
-                    var connectionString = builder.Configuration.GetConnectionString("GarageDb");
-                    options.UseSqlServer(connectionString);
-                });
+builder.Services.AddHttpClient();
 
-                // --- Dependency Injection ---
-                builder.Services.AddScoped<IGaradeBll, GaradeBll>();
-                builder.Services.AddScoped<IGarageDb, GarageDb>();
+// הגדרת החיבור למסד
+builder.Services.AddDbContext<GarageContext>(options =>
+{
+    var connectionString = builder.Configuration.GetConnectionString("GarageDb");
+    options.UseSqlServer(connectionString);
+});
 
-                var app = builder.Build();
+// --- Dependency Injection 
+builder.Services.AddScoped<IGaradeBll, GaradeBll>();
+builder.Services.AddScoped<IGarageDb, GarageDb>();
 
-                // --- Middleware ---
-                if (app.Environment.IsDevelopment())
-                {
-                    app.UseSwagger();
-                    app.UseSwaggerUI();
-                }
+var app = builder.Build();
 
-                app.UseHttpsRedirection();
-                app.UseAuthorization();
+app.UseCors("AllowAngular");
 
-                // --- Catch ReflectionTypeLoadException explicitly ---
-                try
-                {
-                    app.MapControllers();
-                }
-                catch (ReflectionTypeLoadException ex)
-                {
-                    foreach (var loaderEx in ex.LoaderExceptions)
-                    {
-                        Log.Error(loaderEx, "Loader exception: {Message}", loaderEx.Message);
-                    }
-                    throw; // אפשר גם להשאיר כדי שהאפליקציה תיפסק
-                }
+app.UseHttpsRedirection();
+app.UseAuthorization();
 
-                app.Run();
-            }
-            catch (Exception ex)
-            {
-                Log.Fatal(ex, "Application start-up failed");
-            }
-            finally
-            {
-                Log.CloseAndFlush();
-            }
-        }
-    }
+app.MapControllers();
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Garage API V1");
+        c.RoutePrefix = string.Empty; 
+    });
 }
+//סתם לנוחות
+
+app.MapGet("/", () => "Garage API is running. Check /swagger for all endpoints.");
+
+app.Run();

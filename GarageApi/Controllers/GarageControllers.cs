@@ -1,5 +1,6 @@
 
 using GarageBL.intarfaces;
+using GarageBL.servers;
 using GarageDB.EF.Models;
 using GarageEntities;
 using Microsoft.AspNetCore.Http;
@@ -20,11 +21,11 @@ namespace DogBarberShopApi.Controllers
 
         // POST: api/garages/AddGarage
         [HttpPost]
-        public IActionResult AddGarage(AddGarageDto garageDto)
+        public IActionResult AddGarageAsync(AddGarageDto garageDto)
         {
             try
             {
-                _garageBll.AddGarage(garageDto);
+                _garageBll.AddGarageAsync(garageDto);
                 return Ok();
             }
             catch (Exception ex)
@@ -61,6 +62,12 @@ namespace DogBarberShopApi.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
+        }
+        [HttpPost]
+        public async Task<ActionResult> AddSelectedGarages([FromBody] List<Garage> selectedGarages)
+        {
+            await _garageBll.AddSelectedGaragesAsync(selectedGarages);
+            return Ok();
         }
 
     }

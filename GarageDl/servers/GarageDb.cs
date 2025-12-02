@@ -1,6 +1,7 @@
 ﻿using GarageDB.EF.Contexts;
 using GarageDB.EF.Models;
 using GarageDB.intarfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,17 +17,18 @@ namespace GarageDB.servers
             _garageContext = garageContext;
         }
 
-        public void AddGarage(Garage garage)
+        public async Task AddGarageAsync(Garage garage)
         {
-            var existingGarage = _garageContext.Garages
-                .FirstOrDefault(g => g.MisparMosah == garage.MisparMosah);
+            var existingGarage = await _garageContext.Garages
+                .FirstOrDefaultAsync(g => g.MisparMosah == garage.MisparMosah);
 
             if (existingGarage != null)
                 throw new InvalidOperationException("Garage with the same MisparMosah already exists.");
 
-            _garageContext.Garages.Add(garage);
-            _garageContext.SaveChanges();
+            await _garageContext.Garages.AddAsync(garage);
+            await _garageContext.SaveChangesAsync();
         }
+
 
         public List<Garage> GetAllGarages()
         {
@@ -38,6 +40,21 @@ namespace GarageDB.servers
             List<Garage> garagesFromApi = new List<Garage>();
           
             return garagesFromApi;
+        }
+        public async Task AddSelectedGaragesAsync(List<Garage> selectedGarages)
+        {
+            foreach (var garage in selectedGarages)
+            {
+                var exists = await _garageContext.Garages
+                    .AnyAsync(g => g.MisparMosah == garage.MisparMosah);
+
+                if (!exists)
+                {
+                    await _garageContext.Garages.AddAsync(garage);
+                }
+            }
+
+            await _garageContext.SaveChangesAsync();
         }
     }
 }

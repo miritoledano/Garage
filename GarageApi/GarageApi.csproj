@@ -38,8 +38,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\GarageBL\GarageBL.csproj" />
-	  <ProjectReference Include="..\GarageDB\GarageDB.csproj" />
+	  <ProjectReference Include="..\GarageBl\GarageBL.csproj" />
+	  <ProjectReference Include="..\GarageDl\GarageDB.csproj" />
 	  <ProjectReference Include="..\GarageEntities\GarageEntities.csproj" />
 	</ItemGroup>
 

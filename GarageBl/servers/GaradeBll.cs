@@ -7,13 +7,12 @@ using GarageEntities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace GarageBL.servers
 {
-    public class GaradeBll:IGaradeBll
+    public class GaradeBll : IGaradeBll
     {
         private readonly IGarageDb _garageDb;
         private readonly IMapper _mapper;
@@ -25,18 +24,21 @@ namespace GarageBL.servers
             _mapper = mapper;
             _httpClientFactory = httpClientFactory;
         }
-      
-        public void AddGarage(AddGarageDto garageDto)
+
+        // הוספת מוסך אחד (מהטופס או מ-Multi-Select)
+        public async Task AddGarageAsync(AddGarageDto garageDto)
         {
             var garageEntity = _mapper.Map<Garage>(garageDto);
-            _garageDb.AddGarage(garageEntity);
+            await _garageDb.AddGarageAsync(garageEntity);
         }
 
+        // קבלת כל המוסכים ב-DB
         public List<Garage> GetAllGarages()
         {
             return _garageDb.GetAllGarages();
         }
 
+        // שליפת כל המוסכים מה-API (בלי שמירה)
         public async Task<List<Garage>> FetchAndSaveFromApiAsync()
         {
             const string apiUrl =
@@ -50,108 +52,53 @@ namespace GarageBL.servers
 
             var content = await response.Content.ReadAsStringAsync();
             var jsonDoc = JsonDocument.Parse(content);
-
-            var records = jsonDoc.RootElement
-                .GetProperty("result")
-                .GetProperty("records");
+            var records = jsonDoc.RootElement.GetProperty("result").GetProperty("records");
 
             var garagesFromApi = new List<Garage>();
 
             foreach (var record in records.EnumerateArray())
             {
-                // --- קריאת שדות מה־API ---
-                string misparStr = record.TryGetProperty("מספר מוסך", out var misparProp)
-                    ? misparProp.GetString() ?? "0"
-                    : "0";
-
-                string shemMosah = record.TryGetProperty("שם מוסך", out var shemProp)
-                    ? shemProp.GetString() ?? string.Empty
-                    : string.Empty;
-
-                string codSugStr = record.TryGetProperty("קוד סוג מוסך", out var codSugProp)
-                    ? codSugProp.GetString() ?? "0"
-                    : "0";
-
-                string sugMosah = record.TryGetProperty("סוג מוסך", out var sugProp)
-                    ? sugProp.GetString() ?? string.Empty
-                    : string.Empty;
-
-                string ktovet = record.TryGetProperty("כתובת", out var ktovetProp)
-                    ? ktovetProp.GetString()
-                    : null;
-
-                string yishuv = record.TryGetProperty("ישוב", out var yishuvProp)
-                    ? yishuvProp.GetString()
-                    : null;
-
-                string telephone = record.TryGetProperty("טלפון", out var telProp)
-                    ? telProp.GetString()
-                    : null;
-
-                string mikudStr = record.TryGetProperty("מיקוד", out var mikudProp)
-                    ? mikudProp.GetString() ?? "0"
-                    : "0";
-
-                string codMiktzoaStr = record.TryGetProperty("קוד מקצוע", out var codMiktzoaProp)
-                    ? codMiktzoaProp.GetString() ?? "0"
-                    : "0";
-
-                string miktzoa = record.TryGetProperty("מקצוע", out var miktzoaProp)
-                    ? miktzoaProp.GetString()
-                    : null;
-
-                string menahelMiktzoa = record.TryGetProperty("מנהל מקצוע", out var menahelProp)
-                    ? menahelProp.GetString()
-                    : null;
-
-                string rashamStr = record.TryGetProperty("רשם חברות", out var rashamProp)
-                    ? rashamProp.GetString() ?? "0"
-                    : "0";
-
-                string testime = record.TryGetProperty("תת-סוג", out var testimeProp)
-                    ? testimeProp.GetString()
-                    : null;
-
-                // --- המרת מספרים ---
-                int.TryParse(misparStr, out int misparMosah);
-                int.TryParse(codSugStr, out int codSugMosah);
-                int.TryParse(mikudStr, out int mikud);
-                int.TryParse(codMiktzoaStr, out int codMiktzoa);
-                long.TryParse(rashamStr, out long rashamHavarot);
-
-                // --- יצירת אובייקט Garage ---
-                var garage = new Garage
-                {
-                    MisparMosah = misparMosah,
-                    ShemMosah = shemMosah,
-                    CodSugMosah = codSugMosah,
-                    SugMosah = sugMosah,
-                    Ktovet = ktovet,
-                    Yishuv = yishuv,
-                    Telephone = telephone,
-                    Mikud = mikud,
-                    CodMiktzoa = codMiktzoa,
-                    Miktzoa = miktzoa,
-                    MenahelMiktzoa = menahelMiktzoa,
-                    RashamHavarot = rashamHavarot,
-                    Testime = testime
-                };
-
-                garagesFromApi.Add(garage);
-
-
                 try
                 {
-                    _garageDb.AddGarage(garage);
+                    var garage = new Garage
+                    {
+                        MisparMosah = record.TryGetProperty("mispar_mosah", out var mProp) ? mProp.GetInt32() : 0,
+                        ShemMosah = record.TryGetProperty("shem_mosah", out var sProp) ? sProp.GetString() : null,
+                        CodSugMosah = record.TryGetProperty("cod_sug_mosah", out var csProp) ? csProp.GetInt32() : 0,
+                        SugMosah = record.TryGetProperty("sug_mosah", out var sgProp) ? sgProp.GetString() : null,
+                        Ktovet = record.TryGetProperty("ktovet", out var kProp) ? kProp.GetString() : null,
+                        Yishuv = record.TryGetProperty("yishuv", out var yProp) ? yProp.GetString() : null,
+                        Telephone = record.TryGetProperty("telephone", out var tProp) ? tProp.GetString() : null,
+                        Mikud = record.TryGetProperty("mikud", out var mikProp) ? mikProp.GetInt32() : 0,
+                        CodMiktzoa = record.TryGetProperty("cod_miktzoa", out var cmProp) ? cmProp.GetInt32() : 0,
+                        Miktzoa = record.TryGetProperty("miktzoa", out var miProp) ? miProp.GetString() : null,
+                        MenahelMiktzoa = record.TryGetProperty("menahel_miktzoa", out var mmProp) ? mmProp.GetString() : null,
+                        RashamHavarot = record.TryGetProperty("rasham_havarot", out var rProp) ? rProp.GetInt64() : 0,
+                        Testime = record.TryGetProperty("TESTIME", out var ttProp) ? ttProp.GetString() : null
+                    };
+
+                    garagesFromApi.Add(garage);
                 }
-                catch (InvalidOperationException)
+                catch (Exception ex)
                 {
-                    // כבר קיים - לא עושים כלום
+                    Console.WriteLine($"Failed to parse garage: {ex.Message}");
                 }
             }
 
             return garagesFromApi;
         }
+
+        // הוספת רשימת מוסכים שנבחרו ל-DB
+        public async Task AddSelectedGaragesAsync(List<Garage> selectedGarages)
+        {
+            foreach (var garage in selectedGarages)
+            {
+                var exists = _garageDb.GetAllGarages().Any(g => g.MisparMosah == garage.MisparMosah);
+                if (!exists)
+                {
+                    await _garageDb.AddGarageAsync(garage);
+                }
+            }
+        }
     }
 }
-
