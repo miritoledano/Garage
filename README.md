@@ -19,11 +19,13 @@ Install the following NuGet packages via Package Manager Console:
 
 powershell
 Copy code
-Install-Package AutoMapper.Extensions.Microsoft.DependencyInjection
 Install-Package Microsoft.EntityFrameworkCore.SqlServer
 Install-Package Microsoft.EntityFrameworkCore.Tools
+Install-Package Microsoft.EntityFrameworkCore.Design   # החבילה שהוספת
+Install-Package AutoMapper.Extensions.Microsoft.DependencyInjection
 Install-Package Serilog.AspNetCore
 Install-Package Swashbuckle.AspNetCore
+
 3. Configure Database Connection
 Open appsettings.json and update the connection string according to your local SQL Server:
 
