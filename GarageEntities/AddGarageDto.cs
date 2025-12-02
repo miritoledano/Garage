@@ -4,6 +4,9 @@ namespace GarageEntities
 {
     public class AddGarageDto
     {
+        // מחלקה זו מייצגת Data Transfer Object (DTO) עבור מוסך
+        // כלומר, מבנה נתונים שמטרתו לשמש להעברת מידע בין ה-Frontend ל-Backend
+//נניח פה שדה ה ID לא מוצג כי לא רוצים להציג למשתמש וזה קוד שיוצר גמישות בקוד 
         public int MisparMosah { get; set; }
         public string ShemMosah { get; set; } = string.Empty;
         public int CodSugMosah { get; set; }
