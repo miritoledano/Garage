@@ -41,6 +41,7 @@ namespace GarageDB.servers
           
             return garagesFromApi;
         }
+        //בוספת הפונקציה הזאת שתוסיף ל DB לפי ה Multi Select
         public async Task AddSelectedGaragesAsync(List<Garage> selectedGarages)
         {
             foreach (var garage in selectedGarages)

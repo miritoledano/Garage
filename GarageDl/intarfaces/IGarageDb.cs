@@ -8,7 +8,8 @@ namespace GarageDB.intarfaces
         Task AddGarageAsync(Garage garage);
         List<Garage> GetAllGarages();
         List<Garage> FetchAndSaveFromApi();
-         Task AddSelectedGaragesAsync(List<Garage> selectedGarages);
+        //בוספת הפונקציה הזאת שתוסיף ל DB לפי ה Multi Select
+        Task AddSelectedGaragesAsync(List<Garage> selectedGarages);
 
 
 
