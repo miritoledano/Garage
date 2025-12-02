@@ -25,20 +25,20 @@ namespace GarageBL.servers
             _httpClientFactory = httpClientFactory;
         }
 
-        // הוספת מוסך אחד (מהטופס או מ-Multi-Select)
         public async Task AddGarageAsync(AddGarageDto garageDto)
         {
             var garageEntity = _mapper.Map<Garage>(garageDto);
             await _garageDb.AddGarageAsync(garageEntity);
         }
 
-        // קבלת כל המוסכים ב-DB
+        // קבלת כל המוסכים מהמסד נתונים
         public List<Garage> GetAllGarages()
         {
             return _garageDb.GetAllGarages();
         }
 
-        // שליפת כל המוסכים מה-API (בלי שמירה)
+        // שליפת כל המוסכים מה-API 
+//בהתחלה הבנתי שצריך לקרוא מה API ואז לשמור ישר במסד את כל הנתונים אבל אחר כך לפי הוראות צד לקוח הבנתי שזה רק קריאה 
         public async Task<List<Garage>> FetchAndSaveFromApiAsync()
         {
             const string apiUrl =
