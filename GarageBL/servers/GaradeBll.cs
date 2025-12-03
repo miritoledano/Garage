@@ -49,7 +49,7 @@ namespace GarageBL.servers
 
             var response = await client.GetAsync(apiUrl);
             response.EnsureSuccessStatusCode();
-
+//קריאת תוכן התגובה
             var content = await response.Content.ReadAsStringAsync();
             var jsonDoc = JsonDocument.Parse(content);
             var records = jsonDoc.RootElement.GetProperty("result").GetProperty("records");

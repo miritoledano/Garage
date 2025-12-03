@@ -35,12 +35,12 @@ namespace GarageDB.servers
             return _garageContext.Garages.ToList();
         }
 
-        public List<Garage> FetchAndSaveFromApi()
-        {
-            List<Garage> garagesFromApi = new List<Garage>();
+        //public List<Garage> FetchAndSaveFromApi()
+        //{
+        //    List<Garage> garagesFromApi = new List<Garage>();
           
-            return garagesFromApi;
-        }
+        //    return garagesFromApi;
+        //}
         //בוספת הפונקציה הזאת שתוסיף ל DB לפי ה Multi Select
         public async Task AddSelectedGaragesAsync(List<Garage> selectedGarages)
         {
