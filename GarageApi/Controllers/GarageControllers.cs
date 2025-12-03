@@ -21,11 +21,11 @@ namespace DogBarberShopApi.Controllers
 
         // POST: api/garages/AddGarage
         [HttpPost]
-        public IActionResult AddGarageAsync(AddGarageDto garageDto)
+        public async Task<IActionResult> AddGarageAsync(AddGarageDto garageDto)
         {
             try
             {
-                _garageBll.AddGarageAsync(garageDto);
+                await _garageBll.AddGarageAsync(garageDto);
                 return Ok();
             }
             catch (Exception ex)
@@ -33,6 +33,7 @@ namespace DogBarberShopApi.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }
+
 
         // GET: api/garages/GetAllGarages
         [HttpGet]
