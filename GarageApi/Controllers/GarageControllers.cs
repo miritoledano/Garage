@@ -13,10 +13,13 @@ namespace DogBarberShopApi.Controllers
     public class GaragesController : ControllerBase
     {
         private readonly IGaradeBll _garageBll;
+        private readonly ILogger<GaragesController> _logger;
 
-        public GaragesController(IGaradeBll garageBll)
+
+        public GaragesController(IGaradeBll garageBll, ILogger<GaragesController> logger)
         {
             _garageBll = garageBll;
+            _logger = logger;
         }
 
         // POST: api/garages/AddGarage
@@ -30,7 +33,9 @@ namespace DogBarberShopApi.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+                _logger.LogError($"Error on AddGarageAsync, Message: {ex.Message}," +
+                                   $" InnerException: {ex.InnerException}, StackTrace: {ex.StackTrace}");
+                return StatusCode(StatusCodes.Status500InternalServerError);
             }
         }
 
@@ -46,7 +51,9 @@ namespace DogBarberShopApi.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+                _logger.LogError($"Error on GetAllGarages, Message: {ex.Message}," +
+                                                  $" InnerException: {ex.InnerException}, StackTrace: {ex.StackTrace}");
+                return StatusCode(StatusCodes.Status500InternalServerError);
             }
         }
 
@@ -61,15 +68,28 @@ namespace DogBarberShopApi.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+                _logger.LogError($"Error on FetchAndSaveFromApi, Message: {ex.Message}," +
+                                                                 $" InnerException: {ex.InnerException}, StackTrace: {ex.StackTrace}");
+                return StatusCode(StatusCodes.Status500InternalServerError);
             }
         }
         [HttpPost]
+
         public async Task<ActionResult> AddSelectedGarages([FromBody] List<Garage> selectedGarages)
         {
-            await _garageBll.AddSelectedGaragesAsync(selectedGarages);
-            return Ok();
+            try
+            {
+                await _garageBll.AddSelectedGaragesAsync(selectedGarages);
+                return Ok(new { message = "Selected garages added successfully" });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error adding selected garages");
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                                  new { message = "Error adding selected garages" });
+            }
         }
+
 
     }
 }

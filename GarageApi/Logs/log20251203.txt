@@ -64,3 +64,780 @@
 2025-12-03 08:52:34.109 +02:00 [DBG] Request did not match any endpoints
 2025-12-03 08:52:34.123 +02:00 [DBG] Connection ID "18014398532567433221" disconnecting.
 2025-12-03 08:52:34.123 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44364/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.323ms
+2025-12-03 09:04:06.193 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-12-03 09:04:06.302 +02:00 [DBG] Hosting starting
+2025-12-03 09:04:06.328 +02:00 [DBG] Middleware loaded
+2025-12-03 09:04:06.330 +02:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16503 B).
+2025-12-03 09:04:06.330 +02:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-12-03 09:04:06.456 +02:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-12-03 09:04:06.459 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-12-03 09:04:06.462 +02:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-12-03 09:04:06.489 +02:00 [DBG] Loaded hosting startup assembly GarageApi
+2025-12-03 09:04:06.490 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-12-03 09:04:06.490 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-12-03 09:04:06.490 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-12-03 09:04:06.532 +02:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-12-03 09:04:06.536 +02:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-12-03 09:04:06.585 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44364/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-03 09:04:06.584 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44364/_vs/browserLink - null null
+2025-12-03 09:04:06.687 +02:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-12-03 09:04:06.694 +02:00 [DBG] Connection ID "18302628913014112259" disconnecting.
+2025-12-03 09:04:06.696 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44364/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 121.6623ms
+2025-12-03 09:04:06.797 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-03 09:04:06.797 +02:00 [INF] Hosting environment: Development
+2025-12-03 09:04:06.797 +02:00 [INF] Content root path: C:\Users\OWNER\source\repos\GarageApi\GarageApi
+2025-12-03 09:04:06.797 +02:00 [DBG] Hosting started
+2025-12-03 09:04:06.865 +02:00 [DBG] Connection ID "18374686507052040203" disconnecting.
+2025-12-03 09:04:06.866 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44364/_vs/browserLink - 200 null text/javascript; charset=UTF-8 293.3662ms
+2025-12-03 09:04:06.925 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44364/swagger/v1/swagger.json - null null
+2025-12-03 09:04:06.954 +02:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-12-03 09:04:06.954 +02:00 [DBG] Request did not match any endpoints
+2025-12-03 09:04:06.988 +02:00 [DBG] Connection ID "18230571314681217026" disconnecting.
+2025-12-03 09:04:06.989 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44364/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 64.1778ms
+2025-12-03 09:04:12.961 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44364/api/Garages/FetchAndSaveFromApi - null null
+2025-12-03 09:04:12.967 +02:00 [DBG] 1 candidate(s) found for the request path '/api/Garages/FetchAndSaveFromApi'
+2025-12-03 09:04:12.967 +02:00 [DBG] Endpoint 'DogBarberShopApi.Controllers.GaragesController.FetchAndSaveFromApi (GarageApi)' with route pattern 'api/Garages/FetchAndSaveFromApi' is valid for the request path '/api/Garages/FetchAndSaveFromApi'
+2025-12-03 09:04:12.968 +02:00 [DBG] Request matched endpoint 'DogBarberShopApi.Controllers.GaragesController.FetchAndSaveFromApi (GarageApi)'
+2025-12-03 09:04:12.979 +02:00 [INF] Executing endpoint 'DogBarberShopApi.Controllers.GaragesController.FetchAndSaveFromApi (GarageApi)'
+2025-12-03 09:04:12.995 +02:00 [INF] Route matched with {action = "FetchAndSaveFromApi", controller = "Garages"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FetchAndSaveFromApi() on controller DogBarberShopApi.Controllers.GaragesController (GarageApi).
+2025-12-03 09:04:12.998 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-12-03 09:04:12.998 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-12-03 09:04:12.998 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-12-03 09:04:12.999 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-12-03 09:04:12.999 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-12-03 09:04:13.000 +02:00 [DBG] Executing controller factory for controller DogBarberShopApi.Controllers.GaragesController (GarageApi)
+2025-12-03 09:04:13.182 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-12-03 09:04:13.265 +02:00 [DBG] Executed controller factory for controller DogBarberShopApi.Controllers.GaragesController (GarageApi)
+2025-12-03 09:04:13.281 +02:00 [INF] Start processing HTTP request GET https://data.gov.il/api/3/action/datastore_search?*
+2025-12-03 09:04:13.285 +02:00 [INF] Sending HTTP request GET https://data.gov.il/api/3/action/datastore_search?*
+2025-12-03 09:04:23.655 +02:00 [INF] Received HTTP response headers after 10367.7393ms - 200
+2025-12-03 09:04:23.655 +02:00 [INF] End processing HTTP request after 10376.1566ms - 200
+2025-12-03 09:04:23.832 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-12-03 09:04:23.834 +02:00 [DBG] No information found on request to perform content negotiation.
+2025-12-03 09:04:23.834 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-12-03 09:04:23.834 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-12-03 09:04:23.835 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-12-03 09:04:23.835 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[GarageDB.EF.Models.Garage, GarageDB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-03 09:04:23.867 +02:00 [INF] Executed action DogBarberShopApi.Controllers.GaragesController.FetchAndSaveFromApi (GarageApi) in 10865.3423ms
+2025-12-03 09:04:23.868 +02:00 [INF] Executed endpoint 'DogBarberShopApi.Controllers.GaragesController.FetchAndSaveFromApi (GarageApi)'
+2025-12-03 09:04:23.873 +02:00 [DBG] Connection ID "18230571314681217028" disconnecting.
+2025-12-03 09:04:23.874 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44364/api/Garages/FetchAndSaveFromApi - 200 null application/json; charset=utf-8 10913.3727ms
+2025-12-03 09:06:13.318 +02:00 [DBG] HttpMessageHandler expired after 120000ms for client ''
+2025-12-03 09:06:23.324 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:06:23.327 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.1247ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:06:33.333 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:06:33.333 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0023ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:06:43.333 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:06:43.333 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0019ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:06:53.351 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:06:53.351 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0032ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:07:03.353 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:07:03.354 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0118ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:07:13.362 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:07:13.363 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.007ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:07:23.367 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:07:23.367 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0051ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:07:33.375 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:07:33.375 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0048ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:07:43.379 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:07:43.379 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.003ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:07:53.383 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:07:53.384 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0034ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:08:03.401 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:08:03.402 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.9179ms - processed: 1 items - remaining: 0 items
+2025-12-03 09:30:43.580 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44364/api/Garages/GetAllGarages - null null
+2025-12-03 09:30:43.580 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44364/api/Garages/FetchAndSaveFromApi - null null
+2025-12-03 09:30:43.582 +02:00 [DBG] 1 candidate(s) found for the request path '/api/Garages/GetAllGarages'
+2025-12-03 09:30:43.582 +02:00 [DBG] 1 candidate(s) found for the request path '/api/Garages/FetchAndSaveFromApi'
+2025-12-03 09:30:43.582 +02:00 [DBG] Endpoint 'DogBarberShopApi.Controllers.GaragesController.GetAllGarages (GarageApi)' with route pattern 'api/Garages/GetAllGarages' is valid for the request path '/api/Garages/GetAllGarages'
+2025-12-03 09:30:43.582 +02:00 [DBG] Endpoint 'DogBarberShopApi.Controllers.GaragesController.FetchAndSaveFromApi (GarageApi)' with route pattern 'api/Garages/FetchAndSaveFromApi' is valid for the request path '/api/Garages/FetchAndSaveFromApi'
+2025-12-03 09:30:43.583 +02:00 [DBG] Request matched endpoint 'DogBarberShopApi.Controllers.GaragesController.FetchAndSaveFromApi (GarageApi)'
+2025-12-03 09:30:43.583 +02:00 [DBG] Request matched endpoint 'DogBarberShopApi.Controllers.GaragesController.GetAllGarages (GarageApi)'
+2025-12-03 09:30:43.585 +02:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2025-12-03 09:30:43.586 +02:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2025-12-03 09:30:43.586 +02:00 [INF] CORS policy execution successful.
+2025-12-03 09:30:43.586 +02:00 [INF] CORS policy execution successful.
+2025-12-03 09:30:43.589 +02:00 [INF] Executing endpoint 'DogBarberShopApi.Controllers.GaragesController.GetAllGarages (GarageApi)'
+2025-12-03 09:30:43.589 +02:00 [INF] Executing endpoint 'DogBarberShopApi.Controllers.GaragesController.FetchAndSaveFromApi (GarageApi)'
+2025-12-03 09:30:43.590 +02:00 [INF] Route matched with {action = "FetchAndSaveFromApi", controller = "Garages"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FetchAndSaveFromApi() on controller DogBarberShopApi.Controllers.GaragesController (GarageApi).
+2025-12-03 09:30:43.590 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-12-03 09:30:43.590 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-12-03 09:30:43.590 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-12-03 09:30:43.590 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-12-03 09:30:43.590 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-12-03 09:30:43.590 +02:00 [DBG] Executing controller factory for controller DogBarberShopApi.Controllers.GaragesController (GarageApi)
+2025-12-03 09:30:43.622 +02:00 [INF] Route matched with {action = "GetAllGarages", controller = "Garages"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllGarages() on controller DogBarberShopApi.Controllers.GaragesController (GarageApi).
+2025-12-03 09:30:43.622 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-12-03 09:30:43.622 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-12-03 09:30:43.623 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-12-03 09:30:43.623 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-12-03 09:30:43.623 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-12-03 09:30:43.623 +02:00 [DBG] Executing controller factory for controller DogBarberShopApi.Controllers.GaragesController (GarageApi)
+2025-12-03 09:30:43.628 +02:00 [DBG] Executed controller factory for controller DogBarberShopApi.Controllers.GaragesController (GarageApi)
+2025-12-03 09:30:43.628 +02:00 [DBG] Executed controller factory for controller DogBarberShopApi.Controllers.GaragesController (GarageApi)
+2025-12-03 09:30:43.629 +02:00 [INF] Start processing HTTP request GET https://data.gov.il/api/3/action/datastore_search?*
+2025-12-03 09:30:43.629 +02:00 [INF] Sending HTTP request GET https://data.gov.il/api/3/action/datastore_search?*
+2025-12-03 09:30:44.067 +02:00 [INF] Received HTTP response headers after 437.5643ms - 200
+2025-12-03 09:30:44.067 +02:00 [INF] End processing HTTP request after 437.9221ms - 200
+2025-12-03 09:30:44.103 +02:00 [DBG] Entity Framework Core 9.0.0 initialized 'GarageContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0' with options: EngineType=SqlServer 
+2025-12-03 09:30:44.155 +02:00 [DBG] Compiling query expression: 
+'DbSet<Garage>()'
+2025-12-03 09:30:44.272 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-12-03 09:30:44.272 +02:00 [DBG] No information found on request to perform content negotiation.
+2025-12-03 09:30:44.272 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-12-03 09:30:44.272 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-12-03 09:30:44.272 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-12-03 09:30:44.272 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[GarageDB.EF.Models.Garage, GarageDB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-03 09:30:44.285 +02:00 [INF] Executed action DogBarberShopApi.Controllers.GaragesController.FetchAndSaveFromApi (GarageApi) in 695.0317ms
+2025-12-03 09:30:44.285 +02:00 [INF] Executed endpoint 'DogBarberShopApi.Controllers.GaragesController.FetchAndSaveFromApi (GarageApi)'
+2025-12-03 09:30:44.286 +02:00 [DBG] Connection ID "18158513716348321793" disconnecting.
+2025-12-03 09:30:44.286 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44364/api/Garages/FetchAndSaveFromApi - 200 null application/json; charset=utf-8 705.7166ms
+2025-12-03 09:30:44.475 +02:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Garage>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Garage.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Garage.CodMiktzoa (int?), 1], [Property: Garage.CodSugMosah (int) Required, 2], [Property: Garage.Ktovet (string) MaxLength(255), 3], [Property: Garage.MenahelMiktzoa (string) MaxLength(255), 4], [Property: Garage.Miktzoa (string) MaxLength(255), 5], [Property: Garage.Mikud (int?), 6], [Property: Garage.MisparMosah (int) Required, 7], [Property: Garage.RashamHavarot (long?), 8], [Property: Garage.ShemMosah (string) Required MaxLength(255), 9], [Property: Garage.SugMosah (string) Required MaxLength(255), 10], [Property: Garage.Telephone (string) MaxLength(50), 11], [Property: Garage.Testime (string) MaxLength(255), 12], [Property: Garage.Yishuv (string) MaxLength(255), 13] }
+        SELECT g._id, g.cod_miktzoa, g.cod_sug_mosah, g.ktovet, g.menahel_miktzoa, g.miktzoa, g.mikud, g.mispar_mosah, g.rasham_havarot, g.shem_mosah, g.sug_mosah, g.telephone, g.TESTIME, g.yishuv
+        FROM Garage AS g) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Garage.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Garage.CodMiktzoa (int?), 1], [Property: Garage.CodSugMosah (int) Required, 2], [Property: Garage.Ktovet (string) MaxLength(255), 3], [Property: Garage.MenahelMiktzoa (string) MaxLength(255), 4], [Property: Garage.Miktzoa (string) MaxLength(255), 5], [Property: Garage.Mikud (int?), 6], [Property: Garage.MisparMosah (int) Required, 7], [Property: Garage.RashamHavarot (long?), 8], [Property: Garage.ShemMosah (string) Required MaxLength(255), 9], [Property: Garage.SugMosah (string) Required MaxLength(255), 10], [Property: Garage.Telephone (string) MaxLength(50), 11], [Property: Garage.Testime (string) MaxLength(255), 12], [Property: Garage.Yishuv (string) MaxLength(255), 13] }
+        SELECT g._id, g.cod_miktzoa, g.cod_sug_mosah, g.ktovet, g.menahel_miktzoa, g.miktzoa, g.mikud, g.mispar_mosah, g.rasham_havarot, g.shem_mosah, g.sug_mosah, g.telephone, g.TESTIME, g.yishuv
+        FROM Garage AS g, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Garage entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Garage instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Garage);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Garage.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("GarageDB.EF.Models.Garage").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (Garage)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Garage | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("GarageDB.EF.Models.Garage")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Garage | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("GarageDB.EF.Models.Garage")]: 
+                        {
+                            return 
+                            {
+                                Garage instance;
+                                instance = new Garage();
+                                instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                instance.<CodMiktzoa>k__BackingField = dataReader.IsDBNull(1) ? default(int?) : (int?)dataReader.GetInt32(1);
+                                instance.<CodSugMosah>k__BackingField = dataReader.GetInt32(2);
+                                instance.<Ktovet>k__BackingField = dataReader.IsDBNull(3) ? default(string) : dataReader.GetString(3);
+                                instance.<MenahelMiktzoa>k__BackingField = dataReader.IsDBNull(4) ? default(string) : dataReader.GetString(4);
+                                instance.<Miktzoa>k__BackingField = dataReader.IsDBNull(5) ? default(string) : dataReader.GetString(5);
+                                instance.<Mikud>k__BackingField = dataReader.IsDBNull(6) ? default(int?) : (int?)dataReader.GetInt32(6);
+                                instance.<MisparMosah>k__BackingField = dataReader.GetInt32(7);
+                                instance.<RashamHavarot>k__BackingField = dataReader.IsDBNull(8) ? default(long?) : (long?)dataReader.GetInt64(8);
+                                instance.<ShemMosah>k__BackingField = dataReader.GetString(9);
+                                instance.<SugMosah>k__BackingField = dataReader.GetString(10);
+                                instance.<Telephone>k__BackingField = dataReader.IsDBNull(11) ? default(string) : dataReader.GetString(11);
+                                instance.<Testime>k__BackingField = dataReader.IsDBNull(12) ? default(string) : dataReader.GetString(12);
+                                instance.<Yishuv>k__BackingField = dataReader.IsDBNull(13) ? default(string) : dataReader.GetString(13);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Garage | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("GarageDB.EF.Models.Garage")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Garage)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: GarageDB.EF.Contexts.GarageContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2025-12-03 09:30:44.508 +02:00 [DBG] Creating DbConnection.
+2025-12-03 09:30:44.541 +02:00 [DBG] Created DbConnection. (33ms).
+2025-12-03 09:30:44.546 +02:00 [DBG] Opening connection to database 'GarageDb' on server 'DESKTOP-5S6EPEU\SQLEXPRESS'.
+2025-12-03 09:30:44.930 +02:00 [DBG] Opened connection to database 'GarageDb' on server 'DESKTOP-5S6EPEU\SQLEXPRESS'.
+2025-12-03 09:30:44.933 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-12-03 09:30:44.939 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (4ms).
+2025-12-03 09:30:44.941 +02:00 [DBG] Initialized DbCommand for 'ExecuteReader' (8ms).
+2025-12-03 09:30:44.947 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[_id], [g].[cod_miktzoa], [g].[cod_sug_mosah], [g].[ktovet], [g].[menahel_miktzoa], [g].[miktzoa], [g].[mikud], [g].[mispar_mosah], [g].[rasham_havarot], [g].[shem_mosah], [g].[sug_mosah], [g].[telephone], [g].[TESTIME], [g].[yishuv]
+FROM [Garage] AS [g]
+2025-12-03 09:30:44.992 +02:00 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[_id], [g].[cod_miktzoa], [g].[cod_sug_mosah], [g].[ktovet], [g].[menahel_miktzoa], [g].[miktzoa], [g].[mikud], [g].[mispar_mosah], [g].[rasham_havarot], [g].[shem_mosah], [g].[sug_mosah], [g].[telephone], [g].[TESTIME], [g].[yishuv]
+FROM [Garage] AS [g]
+2025-12-03 09:30:45.024 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.089 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.089 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.089 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.089 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.089 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.089 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.089 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.089 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.090 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.090 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.090 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.090 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.090 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.090 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.090 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.090 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.090 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.090 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.090 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.090 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.090 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.090 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.091 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.091 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.091 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.091 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.091 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.091 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.091 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.091 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.091 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.091 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.091 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.091 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.091 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.091 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.092 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.092 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.092 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.092 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.092 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.092 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.092 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.092 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.092 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.092 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.092 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.092 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.093 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.093 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.093 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:30:45.095 +02:00 [DBG] Closing data reader to 'GarageDb' on server 'DESKTOP-5S6EPEU\SQLEXPRESS'.
+2025-12-03 09:30:45.102 +02:00 [DBG] A data reader for 'GarageDb' on server 'DESKTOP-5S6EPEU\SQLEXPRESS' is being disposed after spending 104ms reading results.
+2025-12-03 09:30:45.104 +02:00 [DBG] Closing connection to database 'GarageDb' on server 'DESKTOP-5S6EPEU\SQLEXPRESS'.
+2025-12-03 09:30:45.109 +02:00 [DBG] Closed connection to database 'GarageDb' on server 'DESKTOP-5S6EPEU\SQLEXPRESS' (4ms).
+2025-12-03 09:30:45.109 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-12-03 09:30:45.109 +02:00 [DBG] No information found on request to perform content negotiation.
+2025-12-03 09:30:45.109 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-12-03 09:30:45.109 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-12-03 09:30:45.109 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-12-03 09:30:45.109 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[GarageDB.EF.Models.Garage, GarageDB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-03 09:30:45.111 +02:00 [INF] Executed action DogBarberShopApi.Controllers.GaragesController.GetAllGarages (GarageApi) in 1488.3608ms
+2025-12-03 09:30:45.111 +02:00 [INF] Executed endpoint 'DogBarberShopApi.Controllers.GaragesController.GetAllGarages (GarageApi)'
+2025-12-03 09:30:45.112 +02:00 [DBG] Connection ID "18230571310386249729" disconnecting.
+2025-12-03 09:30:45.113 +02:00 [DBG] 'GarageContext' disposed.
+2025-12-03 09:30:45.117 +02:00 [DBG] Disposing connection to database 'GarageDb' on server 'DESKTOP-5S6EPEU\SQLEXPRESS'.
+2025-12-03 09:30:45.118 +02:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2025-12-03 09:30:45.118 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44364/api/Garages/GetAllGarages - 200 null application/json; charset=utf-8 1538.3307ms
+2025-12-03 09:32:43.641 +02:00 [DBG] HttpMessageHandler expired after 120000ms for client ''
+2025-12-03 09:32:53.640 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:32:53.640 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0029ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:33:03.640 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:33:03.640 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0086ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:33:13.647 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:33:13.647 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0083ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:33:23.662 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:33:23.662 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.013ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:33:33.677 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:33:33.677 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0038ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:33:43.682 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:33:43.682 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0046ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:33:53.703 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:33:53.704 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.011ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:34:03.708 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:34:03.708 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0033ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:34:13.714 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:34:13.715 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0104ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:34:23.717 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:34:23.717 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0031ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:34:33.718 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:34:33.718 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0033ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:34:43.732 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:34:43.732 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0076ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:34:53.742 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:34:53.742 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0045ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:35:03.753 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:35:03.753 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0082ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:35:13.753 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:35:13.754 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0151ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:35:23.766 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:35:23.766 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0043ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:35:33.772 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:35:33.773 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.015ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:35:43.776 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:35:43.776 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0759ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:35:53.801 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:35:53.801 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0048ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:36:03.805 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:36:03.805 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0053ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:36:13.813 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:36:13.813 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.002ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:36:23.816 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:36:23.817 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0048ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:36:33.826 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:36:33.826 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0036ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:36:43.845 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:36:43.845 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.002ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:36:53.855 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:36:53.855 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0016ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:37:03.861 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:37:03.862 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.005ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:37:13.874 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:37:13.875 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0035ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:37:23.876 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:37:23.877 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0052ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:37:33.888 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:37:33.888 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0024ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:37:43.896 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:37:43.896 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0023ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:37:53.903 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:37:53.903 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0069ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:38:03.908 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:38:03.908 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0032ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:38:13.920 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:38:13.920 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0028ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:38:23.933 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:38:23.934 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0021ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:38:33.942 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:38:33.942 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0036ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:38:43.965 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:38:43.965 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0019ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:38:53.975 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:38:53.975 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0046ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:39:03.983 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:39:03.983 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0019ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:39:13.995 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:39:13.995 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0027ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:39:24.004 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:39:24.004 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0763ms - processed: 1 items - remaining: 0 items
+2025-12-03 09:48:56.218 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44364/api/Garages/GetAllGarages - null null
+2025-12-03 09:48:56.219 +02:00 [DBG] 1 candidate(s) found for the request path '/api/Garages/GetAllGarages'
+2025-12-03 09:48:56.219 +02:00 [DBG] Endpoint 'DogBarberShopApi.Controllers.GaragesController.GetAllGarages (GarageApi)' with route pattern 'api/Garages/GetAllGarages' is valid for the request path '/api/Garages/GetAllGarages'
+2025-12-03 09:48:56.219 +02:00 [DBG] Request matched endpoint 'DogBarberShopApi.Controllers.GaragesController.GetAllGarages (GarageApi)'
+2025-12-03 09:48:56.220 +02:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2025-12-03 09:48:56.220 +02:00 [INF] CORS policy execution successful.
+2025-12-03 09:48:56.220 +02:00 [INF] Executing endpoint 'DogBarberShopApi.Controllers.GaragesController.GetAllGarages (GarageApi)'
+2025-12-03 09:48:56.221 +02:00 [INF] Route matched with {action = "GetAllGarages", controller = "Garages"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllGarages() on controller DogBarberShopApi.Controllers.GaragesController (GarageApi).
+2025-12-03 09:48:56.221 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-12-03 09:48:56.221 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-12-03 09:48:56.221 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-12-03 09:48:56.221 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-12-03 09:48:56.222 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-12-03 09:48:56.222 +02:00 [DBG] Executing controller factory for controller DogBarberShopApi.Controllers.GaragesController (GarageApi)
+2025-12-03 09:48:56.230 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44364/api/Garages/FetchAndSaveFromApi - null null
+2025-12-03 09:48:56.230 +02:00 [DBG] 1 candidate(s) found for the request path '/api/Garages/FetchAndSaveFromApi'
+2025-12-03 09:48:56.230 +02:00 [DBG] Endpoint 'DogBarberShopApi.Controllers.GaragesController.FetchAndSaveFromApi (GarageApi)' with route pattern 'api/Garages/FetchAndSaveFromApi' is valid for the request path '/api/Garages/FetchAndSaveFromApi'
+2025-12-03 09:48:56.230 +02:00 [DBG] Request matched endpoint 'DogBarberShopApi.Controllers.GaragesController.FetchAndSaveFromApi (GarageApi)'
+2025-12-03 09:48:56.230 +02:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2025-12-03 09:48:56.230 +02:00 [INF] CORS policy execution successful.
+2025-12-03 09:48:56.231 +02:00 [INF] Executing endpoint 'DogBarberShopApi.Controllers.GaragesController.FetchAndSaveFromApi (GarageApi)'
+2025-12-03 09:48:56.231 +02:00 [INF] Route matched with {action = "FetchAndSaveFromApi", controller = "Garages"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FetchAndSaveFromApi() on controller DogBarberShopApi.Controllers.GaragesController (GarageApi).
+2025-12-03 09:48:56.231 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-12-03 09:48:56.231 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-12-03 09:48:56.231 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-12-03 09:48:56.231 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-12-03 09:48:56.231 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-12-03 09:48:56.231 +02:00 [DBG] Executing controller factory for controller DogBarberShopApi.Controllers.GaragesController (GarageApi)
+2025-12-03 09:48:56.234 +02:00 [DBG] Executed controller factory for controller DogBarberShopApi.Controllers.GaragesController (GarageApi)
+2025-12-03 09:48:56.234 +02:00 [DBG] Executed controller factory for controller DogBarberShopApi.Controllers.GaragesController (GarageApi)
+2025-12-03 09:48:56.235 +02:00 [INF] Start processing HTTP request GET https://data.gov.il/api/3/action/datastore_search?*
+2025-12-03 09:48:56.235 +02:00 [INF] Sending HTTP request GET https://data.gov.il/api/3/action/datastore_search?*
+2025-12-03 09:48:56.432 +02:00 [DBG] Entity Framework Core 9.0.0 initialized 'GarageContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0' with options: EngineType=SqlServer 
+2025-12-03 09:48:56.434 +02:00 [DBG] Creating DbConnection.
+2025-12-03 09:48:56.434 +02:00 [DBG] Created DbConnection. (0ms).
+2025-12-03 09:48:56.435 +02:00 [DBG] Opening connection to database 'GarageDb' on server 'DESKTOP-5S6EPEU\SQLEXPRESS'.
+2025-12-03 09:48:56.514 +02:00 [DBG] Opened connection to database 'GarageDb' on server 'DESKTOP-5S6EPEU\SQLEXPRESS'.
+2025-12-03 09:48:56.515 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-12-03 09:48:56.515 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-12-03 09:48:56.515 +02:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-12-03 09:48:56.515 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[_id], [g].[cod_miktzoa], [g].[cod_sug_mosah], [g].[ktovet], [g].[menahel_miktzoa], [g].[miktzoa], [g].[mikud], [g].[mispar_mosah], [g].[rasham_havarot], [g].[shem_mosah], [g].[sug_mosah], [g].[telephone], [g].[TESTIME], [g].[yishuv]
+FROM [Garage] AS [g]
+2025-12-03 09:48:56.529 +02:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[_id], [g].[cod_miktzoa], [g].[cod_sug_mosah], [g].[ktovet], [g].[menahel_miktzoa], [g].[miktzoa], [g].[mikud], [g].[mispar_mosah], [g].[rasham_havarot], [g].[shem_mosah], [g].[sug_mosah], [g].[telephone], [g].[TESTIME], [g].[yishuv]
+FROM [Garage] AS [g]
+2025-12-03 09:48:56.529 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.530 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.530 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.530 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.530 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.530 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.530 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.530 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.531 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.531 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.531 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.531 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.531 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.531 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.531 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.531 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.531 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.531 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.532 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.532 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.532 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.532 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.532 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.532 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.532 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.532 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.532 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.533 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.533 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.533 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.533 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.533 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.533 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.533 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.533 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.534 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.534 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.534 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.534 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.534 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.534 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.534 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.534 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.534 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.534 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.534 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.535 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.535 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.535 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.535 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.535 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.535 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:48:56.535 +02:00 [DBG] Closing data reader to 'GarageDb' on server 'DESKTOP-5S6EPEU\SQLEXPRESS'.
+2025-12-03 09:48:56.535 +02:00 [DBG] A data reader for 'GarageDb' on server 'DESKTOP-5S6EPEU\SQLEXPRESS' is being disposed after spending 6ms reading results.
+2025-12-03 09:48:56.535 +02:00 [DBG] Closing connection to database 'GarageDb' on server 'DESKTOP-5S6EPEU\SQLEXPRESS'.
+2025-12-03 09:48:56.536 +02:00 [DBG] Closed connection to database 'GarageDb' on server 'DESKTOP-5S6EPEU\SQLEXPRESS' (0ms).
+2025-12-03 09:48:56.536 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-12-03 09:48:56.536 +02:00 [DBG] No information found on request to perform content negotiation.
+2025-12-03 09:48:56.536 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-12-03 09:48:56.536 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-12-03 09:48:56.536 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-12-03 09:48:56.536 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[GarageDB.EF.Models.Garage, GarageDB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-03 09:48:56.537 +02:00 [INF] Executed action DogBarberShopApi.Controllers.GaragesController.GetAllGarages (GarageApi) in 315.3432ms
+2025-12-03 09:48:56.537 +02:00 [INF] Executed endpoint 'DogBarberShopApi.Controllers.GaragesController.GetAllGarages (GarageApi)'
+2025-12-03 09:48:56.537 +02:00 [DBG] 'GarageContext' disposed.
+2025-12-03 09:48:56.538 +02:00 [DBG] Disposing connection to database 'GarageDb' on server 'DESKTOP-5S6EPEU\SQLEXPRESS'.
+2025-12-03 09:48:56.538 +02:00 [DBG] Connection ID "18230571323271151619" disconnecting.
+2025-12-03 09:48:56.538 +02:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2025-12-03 09:48:56.538 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44364/api/Garages/GetAllGarages - 200 null application/json; charset=utf-8 319.8265ms
+2025-12-03 09:48:59.559 +02:00 [INF] Received HTTP response headers after 3323.8934ms - 200
+2025-12-03 09:48:59.560 +02:00 [INF] End processing HTTP request after 3324.7051ms - 200
+2025-12-03 09:48:59.767 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-12-03 09:48:59.767 +02:00 [DBG] No information found on request to perform content negotiation.
+2025-12-03 09:48:59.767 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-12-03 09:48:59.767 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-12-03 09:48:59.767 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-12-03 09:48:59.767 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[GarageDB.EF.Models.Garage, GarageDB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-03 09:48:59.770 +02:00 [INF] Executed action DogBarberShopApi.Controllers.GaragesController.FetchAndSaveFromApi (GarageApi) in 3539.0333ms
+2025-12-03 09:48:59.770 +02:00 [INF] Executed endpoint 'DogBarberShopApi.Controllers.GaragesController.FetchAndSaveFromApi (GarageApi)'
+2025-12-03 09:48:59.770 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44364/api/Garages/FetchAndSaveFromApi - 200 null application/json; charset=utf-8 3540.2482ms
+2025-12-03 09:48:59.770 +02:00 [DBG] Connection ID "18230571314681217030" disconnecting.
+2025-12-03 09:50:56.242 +02:00 [DBG] HttpMessageHandler expired after 120000ms for client ''
+2025-12-03 09:51:06.267 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:51:06.268 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.007ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:51:16.280 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:51:16.281 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0074ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:51:26.294 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:51:26.295 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0046ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:51:36.308 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:51:36.308 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0033ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:51:46.322 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:51:46.322 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0074ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:51:56.336 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:51:56.336 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0061ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:52:06.349 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:52:06.349 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0047ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:52:16.363 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:52:16.363 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0051ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:52:26.392 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:52:26.392 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0067ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:52:36.407 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:52:36.408 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0129ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:52:46.423 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:52:46.424 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0012ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:52:56.429 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:52:56.430 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0019ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:53:06.430 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:53:06.434 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0022ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:53:16.439 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:53:16.439 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0023ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:53:26.441 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:53:26.441 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0006ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:53:36.456 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:53:36.456 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0011ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:53:46.469 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:53:46.469 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0011ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:53:56.479 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:53:56.479 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0008ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:54:06.505 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:54:06.506 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0009ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:54:16.514 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:54:16.514 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0014ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:54:26.524 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:54:26.524 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0009ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:54:36.532 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:54:36.532 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0012ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:54:46.539 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:54:46.539 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0019ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:54:56.545 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:54:56.546 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0026ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:55:06.551 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:55:06.551 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0027ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:55:16.568 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:55:16.568 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0016ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:55:26.585 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:55:26.586 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0054ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:55:36.586 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:55:36.586 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0034ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:55:46.587 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:55:46.587 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0013ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:55:56.599 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:55:56.599 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0043ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:56:06.609 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:56:06.609 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0016ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:56:16.617 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:56:16.618 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0017ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:56:26.644 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:56:26.644 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0032ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:56:36.662 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:56:36.662 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0023ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:56:46.673 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:56:46.673 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0006ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:56:56.686 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:56:56.686 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0007ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:57:06.701 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:57:06.701 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0018ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:57:16.712 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:57:16.712 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0007ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:57:26.713 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:57:26.713 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0025ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:57:36.724 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:57:36.724 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0044ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:57:38.296 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44364/api/Garages/GetAllGarages - null null
+2025-12-03 09:57:38.297 +02:00 [DBG] 1 candidate(s) found for the request path '/api/Garages/GetAllGarages'
+2025-12-03 09:57:38.297 +02:00 [DBG] Endpoint 'DogBarberShopApi.Controllers.GaragesController.GetAllGarages (GarageApi)' with route pattern 'api/Garages/GetAllGarages' is valid for the request path '/api/Garages/GetAllGarages'
+2025-12-03 09:57:38.297 +02:00 [DBG] Request matched endpoint 'DogBarberShopApi.Controllers.GaragesController.GetAllGarages (GarageApi)'
+2025-12-03 09:57:38.297 +02:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2025-12-03 09:57:38.298 +02:00 [INF] CORS policy execution successful.
+2025-12-03 09:57:38.298 +02:00 [INF] Executing endpoint 'DogBarberShopApi.Controllers.GaragesController.GetAllGarages (GarageApi)'
+2025-12-03 09:57:38.298 +02:00 [INF] Route matched with {action = "GetAllGarages", controller = "Garages"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllGarages() on controller DogBarberShopApi.Controllers.GaragesController (GarageApi).
+2025-12-03 09:57:38.298 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-12-03 09:57:38.299 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-12-03 09:57:38.299 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-12-03 09:57:38.299 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-12-03 09:57:38.299 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-12-03 09:57:38.299 +02:00 [DBG] Executing controller factory for controller DogBarberShopApi.Controllers.GaragesController (GarageApi)
+2025-12-03 09:57:38.327 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44364/api/Garages/FetchAndSaveFromApi - null null
+2025-12-03 09:57:38.328 +02:00 [DBG] 1 candidate(s) found for the request path '/api/Garages/FetchAndSaveFromApi'
+2025-12-03 09:57:38.328 +02:00 [DBG] Endpoint 'DogBarberShopApi.Controllers.GaragesController.FetchAndSaveFromApi (GarageApi)' with route pattern 'api/Garages/FetchAndSaveFromApi' is valid for the request path '/api/Garages/FetchAndSaveFromApi'
+2025-12-03 09:57:38.328 +02:00 [DBG] Executed controller factory for controller DogBarberShopApi.Controllers.GaragesController (GarageApi)
+2025-12-03 09:57:38.328 +02:00 [DBG] Request matched endpoint 'DogBarberShopApi.Controllers.GaragesController.FetchAndSaveFromApi (GarageApi)'
+2025-12-03 09:57:38.328 +02:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2025-12-03 09:57:38.328 +02:00 [INF] CORS policy execution successful.
+2025-12-03 09:57:38.328 +02:00 [INF] Executing endpoint 'DogBarberShopApi.Controllers.GaragesController.FetchAndSaveFromApi (GarageApi)'
+2025-12-03 09:57:38.328 +02:00 [INF] Route matched with {action = "FetchAndSaveFromApi", controller = "Garages"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FetchAndSaveFromApi() on controller DogBarberShopApi.Controllers.GaragesController (GarageApi).
+2025-12-03 09:57:38.329 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-12-03 09:57:38.329 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-12-03 09:57:38.329 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-12-03 09:57:38.329 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-12-03 09:57:38.329 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-12-03 09:57:38.329 +02:00 [DBG] Executing controller factory for controller DogBarberShopApi.Controllers.GaragesController (GarageApi)
+2025-12-03 09:57:38.329 +02:00 [DBG] Executed controller factory for controller DogBarberShopApi.Controllers.GaragesController (GarageApi)
+2025-12-03 09:57:38.329 +02:00 [INF] Start processing HTTP request GET https://data.gov.il/api/3/action/datastore_search?*
+2025-12-03 09:57:38.330 +02:00 [INF] Sending HTTP request GET https://data.gov.il/api/3/action/datastore_search?*
+2025-12-03 09:57:38.410 +02:00 [DBG] Entity Framework Core 9.0.0 initialized 'GarageContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0' with options: EngineType=SqlServer 
+2025-12-03 09:57:38.411 +02:00 [DBG] Creating DbConnection.
+2025-12-03 09:57:38.411 +02:00 [DBG] Created DbConnection. (0ms).
+2025-12-03 09:57:38.411 +02:00 [DBG] Opening connection to database 'GarageDb' on server 'DESKTOP-5S6EPEU\SQLEXPRESS'.
+2025-12-03 09:57:38.466 +02:00 [DBG] Opened connection to database 'GarageDb' on server 'DESKTOP-5S6EPEU\SQLEXPRESS'.
+2025-12-03 09:57:38.466 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-12-03 09:57:38.466 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-12-03 09:57:38.466 +02:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-12-03 09:57:38.466 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[_id], [g].[cod_miktzoa], [g].[cod_sug_mosah], [g].[ktovet], [g].[menahel_miktzoa], [g].[miktzoa], [g].[mikud], [g].[mispar_mosah], [g].[rasham_havarot], [g].[shem_mosah], [g].[sug_mosah], [g].[telephone], [g].[TESTIME], [g].[yishuv]
+FROM [Garage] AS [g]
+2025-12-03 09:57:38.484 +02:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[_id], [g].[cod_miktzoa], [g].[cod_sug_mosah], [g].[ktovet], [g].[menahel_miktzoa], [g].[miktzoa], [g].[mikud], [g].[mispar_mosah], [g].[rasham_havarot], [g].[shem_mosah], [g].[sug_mosah], [g].[telephone], [g].[TESTIME], [g].[yishuv]
+FROM [Garage] AS [g]
+2025-12-03 09:57:38.484 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.484 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.484 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.484 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.485 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.485 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.485 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.485 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.485 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.485 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.485 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.485 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.485 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.485 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.485 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.486 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.486 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.486 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.486 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.486 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.486 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.486 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.486 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.486 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.486 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.487 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.487 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.487 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.487 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.487 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.487 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.487 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.487 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.488 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.488 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.488 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.488 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.488 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.488 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.488 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.488 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.488 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.488 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.488 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.488 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.489 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.489 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.489 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.489 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.489 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.489 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.489 +02:00 [DBG] Context 'GarageContext' started tracking 'Garage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-03 09:57:38.489 +02:00 [DBG] Closing data reader to 'GarageDb' on server 'DESKTOP-5S6EPEU\SQLEXPRESS'.
+2025-12-03 09:57:38.489 +02:00 [DBG] A data reader for 'GarageDb' on server 'DESKTOP-5S6EPEU\SQLEXPRESS' is being disposed after spending 5ms reading results.
+2025-12-03 09:57:38.489 +02:00 [DBG] Closing connection to database 'GarageDb' on server 'DESKTOP-5S6EPEU\SQLEXPRESS'.
+2025-12-03 09:57:38.489 +02:00 [DBG] Closed connection to database 'GarageDb' on server 'DESKTOP-5S6EPEU\SQLEXPRESS' (0ms).
+2025-12-03 09:57:38.490 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-12-03 09:57:38.490 +02:00 [DBG] No information found on request to perform content negotiation.
+2025-12-03 09:57:38.490 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-12-03 09:57:38.490 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-12-03 09:57:38.490 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-12-03 09:57:38.490 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[GarageDB.EF.Models.Garage, GarageDB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-03 09:57:38.491 +02:00 [INF] Executed action DogBarberShopApi.Controllers.GaragesController.GetAllGarages (GarageApi) in 192.1416ms
+2025-12-03 09:57:38.491 +02:00 [INF] Executed endpoint 'DogBarberShopApi.Controllers.GaragesController.GetAllGarages (GarageApi)'
+2025-12-03 09:57:38.491 +02:00 [DBG] 'GarageContext' disposed.
+2025-12-03 09:57:38.491 +02:00 [DBG] Connection ID "18230571314681217032" disconnecting.
+2025-12-03 09:57:38.491 +02:00 [DBG] Disposing connection to database 'GarageDb' on server 'DESKTOP-5S6EPEU\SQLEXPRESS'.
+2025-12-03 09:57:38.492 +02:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2025-12-03 09:57:38.492 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44364/api/Garages/GetAllGarages - 200 null application/json; charset=utf-8 195.4023ms
+2025-12-03 09:57:40.196 +02:00 [INF] Received HTTP response headers after 1866.3812ms - 200
+2025-12-03 09:57:40.196 +02:00 [INF] End processing HTTP request after 1867.0207ms - 200
+2025-12-03 09:57:40.385 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-12-03 09:57:40.385 +02:00 [DBG] No information found on request to perform content negotiation.
+2025-12-03 09:57:40.385 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-12-03 09:57:40.385 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-12-03 09:57:40.385 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-12-03 09:57:40.385 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[GarageDB.EF.Models.Garage, GarageDB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-03 09:57:40.388 +02:00 [INF] Executed action DogBarberShopApi.Controllers.GaragesController.FetchAndSaveFromApi (GarageApi) in 2058.9843ms
+2025-12-03 09:57:40.388 +02:00 [INF] Executed endpoint 'DogBarberShopApi.Controllers.GaragesController.FetchAndSaveFromApi (GarageApi)'
+2025-12-03 09:57:40.388 +02:00 [DBG] Connection ID "18230571323271151621" disconnecting.
+2025-12-03 09:57:40.388 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44364/api/Garages/FetchAndSaveFromApi - 200 null application/json; charset=utf-8 2060.6591ms
+2025-12-03 09:57:46.725 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:57:46.725 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0011ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:57:56.734 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:57:56.735 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0043ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:58:06.747 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:58:06.748 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0021ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:58:16.761 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:58:16.802 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0034ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:58:26.804 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:58:26.804 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0008ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:58:36.821 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:58:36.821 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0013ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:58:46.836 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:58:46.836 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0006ms - processed: 0 items - remaining: 1 items
+2025-12-03 09:58:56.839 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 09:58:56.840 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0009ms - processed: 0 items - remaining: 1 items
+2025-12-03 10:00:21.021 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 10:00:21.021 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0017ms - processed: 0 items - remaining: 1 items
+2025-12-03 10:00:31.022 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 10:00:31.022 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0007ms - processed: 0 items - remaining: 1 items
+2025-12-03 10:00:41.023 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 10:00:41.025 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0008ms - processed: 0 items - remaining: 1 items
+2025-12-03 10:00:51.026 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-12-03 10:00:51.026 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0011ms - processed: 0 items - remaining: 1 items
+2025-12-03 10:00:52.330 +02:00 [DBG] HttpMessageHandler expired after 120000ms for client ''
+2025-12-03 10:01:01.031 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2025-12-03 10:01:01.031 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0023ms - processed: 0 items - remaining: 2 items
+2025-12-03 10:01:11.044 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2025-12-03 10:01:11.044 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0015ms - processed: 0 items - remaining: 2 items
+2025-12-03 10:01:21.050 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2025-12-03 10:01:21.050 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.001ms - processed: 0 items - remaining: 2 items
+2025-12-03 10:01:31.052 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2025-12-03 10:01:31.052 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0006ms - processed: 0 items - remaining: 2 items
+2025-12-03 10:01:41.052 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2025-12-03 10:01:41.052 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0013ms - processed: 0 items - remaining: 2 items
+2025-12-03 10:01:51.064 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2025-12-03 10:01:51.064 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0015ms - processed: 0 items - remaining: 2 items
+2025-12-03 10:02:01.081 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2025-12-03 10:02:01.081 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0028ms - processed: 0 items - remaining: 2 items
+2025-12-03 10:02:11.114 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2025-12-03 10:02:11.114 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0034ms - processed: 0 items - remaining: 2 items
+2025-12-03 10:02:21.119 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2025-12-03 10:02:21.119 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0012ms - processed: 0 items - remaining: 2 items
+2025-12-03 10:02:31.125 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2025-12-03 10:02:31.125 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0021ms - processed: 0 items - remaining: 2 items
+2025-12-03 10:02:41.128 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2025-12-03 10:02:41.128 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0026ms - processed: 0 items - remaining: 2 items
+2025-12-03 10:02:51.143 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2025-12-03 10:02:51.144 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.007ms - processed: 0 items - remaining: 2 items
+2025-12-03 10:03:01.158 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2025-12-03 10:03:01.158 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0013ms - processed: 0 items - remaining: 2 items
+2025-12-03 10:03:11.165 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2025-12-03 10:03:11.165 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0483ms - processed: 2 items - remaining: 0 items
